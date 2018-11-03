@@ -5,11 +5,11 @@ angular
   .config(['$routeProvider',
     function config($routeProvider){
       $routeProvider
-        .when('/intro', {
-          templateUrl: '/app/t/intro.t.html',
+        .when('intro', {
+          templateUrl: 'app/t/intro.t.html',
           controller: 'IntroCtrl'
         })
-        .when('/acrostic', {
+        .when('acrostic', {
           template: '<acrostic></acrostic>'
         })
         .otherwise('/intro');

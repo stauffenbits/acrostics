@@ -3,7 +3,7 @@
 angular
   .module('acrosticApp')
   .component('acrostic', {
-    templateUrl: '/app/t/acrostic.t.html',
+    templateUrl: 'app/t/acrostic.t.html',
     controller: ['$scope', function AcrosticCtrl($scope){
       $scope.word = '';
       $scope.words = [];

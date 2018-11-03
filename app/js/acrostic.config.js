@@ -6,8 +6,7 @@ angular
     function config($routeProvider){
       $routeProvider
         .when('/intro', {
-          templateUrl: 'app/t/intro.t.html',
-          controller: 'IntroCtrl'
+          template: '<intro></intro>'
         })
         .when('/acrostic', {
           template: '<acrostic></acrostic>'

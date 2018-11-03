@@ -1,4 +1,3 @@
-
 <div class="block">
   <label>Enter a word below:</label><br>
   <input ng-model="word" class="block">
@@ -6,7 +5,7 @@
 
 <ul class="block">
   <li ng-repeat="letter in word track by $index">
-    <input class="sub-word" ng-model="words[$index]" ng-value="letter" placeholder="a word beginning with {{letter}}">
+    <input class="sub-word" ng-model="words[$index]" placeholder="A word beginning with "{{letter}}">
   </li>
 </ul>
 

@@ -5,7 +5,7 @@ angular
   .config(['$routeProvider',
     function config($routeProvider){
       $routeProvider
-        .when('intro', {
+        .when('/intro', {
           templateUrl: 'app/t/intro.t.html',
           controller: 'IntroCtrl'
         })

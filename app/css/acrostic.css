@@ -41,7 +41,10 @@ textarea {
 }
 
 blockquote {
-  border-left: 3px black; 
+  border-left: 2px black;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
 }
 
 #intro { 
@@ -56,7 +59,7 @@ footer {
   height: min-content;
 }
 
-input {
+input, input[selected] {
   border-top: 0;
   border-right: 0;
   border-left: 0;

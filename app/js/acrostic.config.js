@@ -9,7 +9,7 @@ angular
           templateUrl: 'app/t/intro.t.html',
           controller: 'IntroCtrl'
         })
-        .when('acrostic', {
+        .when('/acrostic', {
           template: '<acrostic></acrostic>'
         })
         .otherwise('/intro');

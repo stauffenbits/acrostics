@@ -4,7 +4,7 @@ angular
   .module('acrosticApp')
   .component('intro', {
     templateUrl: 'app/t/intro.t.html',
-    controller: function IntroCtrl(){
+    controller: [function IntroCtrl(){
       console.log('IntroCtrl');
-    }
+    }]
   });

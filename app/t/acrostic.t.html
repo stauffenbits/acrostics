@@ -5,10 +5,9 @@
 
 <ul class="block">
   <li ng-repeat="letter in word track by $index">
-    <input class="sub-word" ng-model="words[$index]" placeholder="A word beginning with "{{letter}}" ng-value="letter">
+    <input class="sub-word" ng-model="words[$index]" placeholder="A word beginning with {{letter}}" ng-value="letter">
   </li>
 </ul>
-
 <textarea class="block" ng-model="output" readonly></textarea>
 <br>
 <button ng-click="download()">Download</button>

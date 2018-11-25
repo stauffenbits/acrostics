@@ -1,13 +1,6 @@
-<label>Enter a word below:</label><br>
-
-<input ng-model="word" class="block">
-
-<ul class="block">
-  <li ng-repeat="letter in word track by $index">
-    <input class="sub-word" ng-model="words[$index]" ng-value="letter" placeholder="a word beginning with {{letter}}">
+<input ng-model="$ctrl.word">
+<ul ng-if="$ctrl.word.length-1">
+  <li ng-repeat="letter in $ctrl.word track by $index">
+    <acrostic word="letter" tabindex="$ctrl.tabindex+'.'+$index" words="words"></acrostic>
   </li>
 </ul>
-
-<textarea class="block" ng-model="output" readonly></textarea>
-<br>
-<button ng-click="download()">Download</button>

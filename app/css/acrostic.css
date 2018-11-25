@@ -1,52 +1,12 @@
-
-
-body {
-  display: flex;
-  justify-content: center;
-  overflow: scroll;
-}
-
-/*
-body > * {
-  border: 1px solid black;
-}
-*/
-
-header {
-  /* stick to the top */
-  position: fixed;
-  top: 0;
-  height: min-content;
-}
-
-#content {
-  position: fixed;
-  top: 15%;
+input, input:focus {
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid cornflowerblue;
 }
 
 li {
   list-style: none;
-}
-
-.block {
-  display: inline-block;
-  vertical-align: top;
-  overflow-y: visible;
-}
-
-textarea {
-  width: 300px;
-  height: 500px;
-  overflow: visible;
-}
-
-blockquote {
-  border-left: 3px black; 
-}
-
-#intro { 
-  margin-left: 25%;
-  margin-right: 25%;
 }
 
 footer {
@@ -54,18 +14,4 @@ footer {
   position: fixed;
   bottom: 0;
   height: min-content;
-}
-
-input {
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
-  border-bottom: 1px solid cornflowerblue;
-}
-
-textarea {
-  border-left: 1px solid cornflowerblue;
-  border-top: 0;
-  border-bottom: 0;
-  border-right: 0;
 }

@@ -2,34 +2,39 @@
 <html ng-app="acrosticApp">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Acrostic Factory</title>
     <link rel="stylesheet" href="/app/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/app/css/jquery-ui.min.css">
     <link rel="stylesheet" href="/app/css/acrostic.css">
-
+    
     <script type="text/javascript" src="/app/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/app/js/jquery-ui.min.js"></script>
+
     <script type="text/javascript" src="/app/js/download2.js"></script>
     <script type="text/javascript" src="/app/js/angular.min.js"></script>
     <script type="text/javascript" src="/app/js/angular-route.min.js"></script>
-    
+
     <script type="text/javascript" src="/app/js/acrostic.module.js"></script>
     <script type="text/javascript" src="/app/js/acrostic.config.js"></script>
 
     <script type="text/javascript" src="/app/js/intro.component.js"></script>
     <script type="text/javascript" src="/app/js/acrostic.component.js"></script>
-  
-    
+    <script type="text/javascript" src="/app/js/acrostic-factory.component.js"></script>
   </head>
-  <body>
-    <header>
-      <h1>Acrostic</h1>
-      <a href="#!/intro">Home</a> |
-      <a href="#!/acrostic">Acrostic</a>
-    </header>
-  
-    <div id="content" ng-view></div>
-  
-    <footer>
-      <p><a href="mailto:moore.joshua@pm.me">Joshua Marshall Moore</a> | North Las Vegas, Nevada, United States</p>
-    </footer>
+  <body style="overflow-y: scroll;">
+    <div class="container">
+      <header>
+        <h1>Acrostic</h1>
+        <a href="#!/intro">Home</a> |
+        <a href="#!/acrostic">Acrostic</a>
+      </header>
+    
+      <div id="content" ng-view></div>
+    
+      <footer>
+        <p><a href="mailto:moore.joshua@pm.me">Joshua Marshall Moore</a> | North Las Vegas, Nevada, United States</p>
+      </footer>
+    </div>
   </body>
 </html>

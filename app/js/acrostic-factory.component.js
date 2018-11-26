@@ -6,7 +6,7 @@ angular
     template: '<acrostic word="word" tabindex=0 words="words"></acrostic><button ng-click="$ctrl.download()">Download</button>',
     controller: ['$scope', '$http', function($scope, $http){
       this.download = function(){
-        download($('input').toArray().filter(i => $(i).val() ? $(i).val().length > 1 : false).map(i => $(i).val()).join('\n'), $scope.word + '.txt', 'text');
+        download($('input').toArray().filter(i => $(i).val() ? $(i).val().length > 1 : false).map(i => $(i).val()).join('\r\n'), $scope.word + '.txt', 'text');
       }
 
       /*

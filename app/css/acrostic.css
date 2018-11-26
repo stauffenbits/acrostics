@@ -33,3 +33,7 @@ footer {
   bottom: 0;
   height: min-content;
 }
+
+#content {
+  margin-bottom: 15%;
+}

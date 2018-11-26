@@ -1,7 +1,7 @@
 
-<input ng-model="$ctrl.word">
+<input ng-model="$ctrl.word" tabindex="tabindex">
 <ul ng-if="$ctrl.word.length-1">
   <li ng-repeat="letter in $ctrl.word track by $index">
-    <acrostic word="letter" tabindex="$ctrl.tabindex+'.'+$index" words="words"></acrostic>
+    <acrostic word="letter" tabindex="$ctrl.tabindex+'.'+$index"></acrostic>
   </li>
 </ul>

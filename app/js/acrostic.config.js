@@ -9,7 +9,7 @@ angular
           template: '<intro></intro>'
         })
         .when('/acrostic', {
-          template: '<acrostic></acrostic>'
+          template: '<acrostic-factory></acrostic-factory>'
         })
         .otherwise('/intro');
     }]);

@@ -10,7 +10,7 @@ angular
           $('input')
           .toArray()
           .filter(i => $(i).val() ? $(i).val().length > 1 : false)
-          .map(i => `${'  '.repeat(parseInt($(i).attr('tabindex'))}${$(i).val()}`)
+          .map(i => `${'  '.repeat(parseInt($(i).attr('tabindex')))}${$(i).val()}`)
           .join('\n'),
           $scope.word + '.txt', 
           'text'

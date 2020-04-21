@@ -13,7 +13,7 @@ angular
           .map(i => `${'  '.repeat(parseInt($(i).attr('tabindex')))}${$(i).val()}`)
           .join('\n'),
           $scope.word + '.txt', 
-          'text'
+          'text/plain'
         );
       }
 
